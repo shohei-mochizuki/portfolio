@@ -293,25 +293,25 @@
           </div>
           <div>
             <h3>Contact Form</h3>
-            <form>
+            <form id="contact-form">
               <div class="form-group my-3">
                 <label for="inputName">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                <input type="text" name="name" class="form-control" id="inputName" placeholder="Enter your name" required>
               </div>
               <div class="form-group my-3">
                 <label for="inputEmail">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
               </div>
               <div class="form-group my-3">
                 <label for="inputSubject">Subject</label>
-                <input type="text" class="form-control" id="inputSubject" placeholder="Enter your subject" required>
+                <input type="text" name="subject" class="form-control" id="inputSubject" placeholder="Enter your subject" required>
               </div>
               <div class="form-group mt-3">
                 <label for="inputMessage">Message</label>
-                <textarea type="text" class="form-control" id="inputMessage" placeholder="Enter your message" required></textarea>
+                <textarea type="text" name="message" class="form-control" id="inputMessage" placeholder="Enter your message" required></textarea>
               </div>
               <p class="my-2"><small class="text-muted">*All the four fields above need to be filled</small></p>
-              <button type="submit" class="btn btn-primary">Send</button>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Send</button>
             </form>
           </div>
         </div>
@@ -321,5 +321,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("5Q2k5Mehaj8ZWs30d");
+   })();
+  </script>
+  <script src="./assets/js/form.js"></script>
 </body>
 </html>
