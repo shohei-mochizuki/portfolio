@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shohei Mochizuki | Full Stack Developer</title>
   <meta name="description" content="A Full Stack Developer">
+  <link rel="icon" href="./assets/logos/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
@@ -15,8 +17,8 @@
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
-          <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-text-bottom" alt="">
-          <span class="fs-3 fw-semibold ms-1">Shohei Mochizuki</span>
+          <img src="./assets/logos/logo.png" width="30" height="30" class="d-inline-block align-text-bottom" alt="">
+          <span class="fs-3 fw-semibold ms-1"><span class="text-primary-emphasis">Shohei</span> Mochizuki</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,10 +32,10 @@
               <a class="nav-link" href="#section-about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-skills">Skills</a>
+              <a class="nav-link" href="#section-works">Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-works">Works</a>
+              <a class="nav-link" href="#section-skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-contact">Contact</a>
@@ -55,13 +57,19 @@
             <div class="col-lg-8 mt-4">
               <div class="mx-5">
                 <h5 class="text-center text-lg-start">Hello World 🌎 ! I'm</h5>
-                <h2 class="text-center text-lg-start">Shohei Mochizuki</h2>
+                <h2 class="text-center text-lg-start"><span class="text-primary-emphasis">Shohei</span> Mochizuki</h2>
                 <p class="text-center text-lg-start"><small class="text-muted">Pronunciation: show-hay moe-chee-zoo-key | Pronuous: he/his/him</small></p>
                 <p>A full stack web developer with 8 years of working experience in data analytics and engineering fields. Love solving issues with other people and working in a diverse environment.</p>
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                  <button type="button" class="btn btn-secondary">
-                    <a href="./assets/documents/Resume_Shohei-Mochizuki.pdf" class="text-reset text-decoration-none" target="_blank" rel="noopener noreferrer">Resume</a>
-                  </button>
+                <div class="d-flex justify-content-center justify-content-lg-start mt-4">
+                  <a href="./assets/documents/Resume_Shohei-Mochizuki.pdf" class="me-3" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logos/resume.png" height="40px">
+                  </a>
+                  <a href="https://www.linkedin.com/in/shoheimochizuki" class="mx-3" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logos/linkedin.png" height="40px">
+                  </a>
+                  <a href="https://github.com/shohei-mochizuki" class="ms-2" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/logos/github.svg" height="40px">
+                  </a>
                 </div>
               </div>
             </div>
@@ -71,7 +79,11 @@
       
       <!-- About -->   
       <div class="flex-column my-5 py-5" id="section-about">
-        <h1 class="text-dark">About Me</h1>
+        <h1 class="text-dark">About Me 
+          <a href="https://www.linkedin.com/in/shoheimochizuki" class="ms-3" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/logos/linkedin.png" height="40px">
+          </a>
+        </h1>
         <div class="mt-5 mx-5 p-5 bg-light rounded-5">
           <p>I love making a plan, solving problems/issues and creating something meaningful. This is why I started my career as a civil engineer, which gave me a lot of opportunities to conduct academic researches and to participate in construction projects for a better future. These projects usually took from a year to several years and threw me a lot of tough problems but solving them by working with other team members using engineering and project management skills was a thrilling challenge for me and I had great experience with them. It also gave me a chance to work in an international environment and this is when I realized that working in a diverse environment was what I would like for the rest of my career and it encouraged me to move to Canada.<br><br>
 
@@ -83,12 +95,118 @@
         </div>
       </div>  
 
+      <!-- Works -->   
+      <div class="flex-column my-5 py-5" id="section-works">
+        <h1 class="text-dark">Works 
+          <a href="https://github.com/shohei-mochizuki" class="ms-3" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/logos/github.svg" height="40px">
+          </a>
+        </h1>
+        <div class="m-5 p-5 bg-light rounded-5">
+          <div id="carouselWorks" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators rounded-2 bg-darkblue">
+              <li data-bs-target="#carouselWorks" data-slide-to="0" class="active text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="1" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="2" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="3" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="4" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="5" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="6" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="7" class="text-danger"></li>
+              <li data-bs-target="#carouselWorks" data-slide-to="8" class="text-danger"></li>
+            </ol>
+            <div class="carousel-inner">
+              <a class="carousel-item active max-75vh" data-interval="30000" href="https://github.com/shohei-mochizuki">
+                <img src="./assets/images/pj19-texteditor-pwa.png" class="carousel-image d-block W-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Offline & Installable Text Editor</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </a>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj15-traveler-review.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Travel Review Website</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj13-ecommerce-mongodb.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>E-commerce Backend Database System</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj12-employment-data.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Employment Database System</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj11-notetaker.png" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Note Taker</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj9-tenthings-toronto.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Event List Website for Torontonians</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj6-weather-dashboard.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>World Weather Dashboard</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj4-interactive-quiz.png" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Interactive Coding Quiz</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item max-75vh" data-interval="30000">
+                <img src="./assets/images/pj3-password-generator.jpg" class="carousel-image d-block w-100 ratio ratio-4x3 rounded rounded-4 border-black" alt="...">
+                <div class="carousel-caption bg-lightblue text-black p-2 rounded border-darkblue border-3 d-none d-md-block">
+                  <h5>Easy Random Password Generator</h5>
+                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWorks" role="button" data-slide="prev">
+              <div class="bg-darkblue text-white rounded-4 p-2 border border-white border-3">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span><br>
+                <span class="sr-only fs-6">Prev</span>
+              </div>
+            </a>
+            <a class="carousel-control-next" href="#carouselWorks" role="button" data-slide="next">
+              <div class="bg-darkblue text-white rounded-4 p-2 border border-white border-3">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span><br>
+                <span class="sr-only fs-6">Next</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Skills -->   
       <div class="flex-column my-5 py-5" id="section-skills">
-        <h1 class="text-dark">Skills</h1>
+        <h1 class="text-dark">Skills 
+          <a href="./assets/documents/Resume_Shohei-Mochizuki.pdf" class="ms-3" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/logos/resume.png" height="40px">
+          </a>
+        </h1>
         <div class="m-5 p-5 bg-light rounded-5">
+          <h2>Web development skills</h2>
           <div class="container text-center">
-            <div class="row row-cols-lg-4 row-cols-3">
+            <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
               <div class="col my-4">
                 <img src="./assets/logos/html.svg" width="50" height="50">
                 <p>HTML</p>
@@ -157,6 +275,11 @@
                 <img src="./assets/logos/pwa.png" width="70" height="50">
                 <p>PWA</p>
               </div>
+            </div>
+          </div>
+          <h2 class="mt-5">Data analytics skills</h2>
+          <div class="container text-center">
+            <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
               <div class="col my-4">
                 <img src="./assets/logos/python.svg" width="50" height="50">
                 <p>Python</p>
@@ -175,109 +298,33 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Works -->   
-      <div class="flex-column my-5 py-5" id="section-works">
-        <h1 class="text-dark">Works</h1>
-        <div class="m-5 p-5 bg-light rounded-5">
-          <div id="carouselWorks" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators rounded-1 bg-danger">
-              <li data-bs-target="#carouselWorks" data-slide-to="0" class="active text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="1" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="2" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="3" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="4" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="5" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="6" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="7" class="text-danger"></li>
-              <li data-bs-target="#carouselWorks" data-slide-to="8" class="text-danger"></li>
-            </ol>
-            <div class="carousel-inner">
-              <a class="carousel-item active" data-interval="30000" href="https://github.com/shohei-mochizuki">
-                <img src="./assets/images/pj19-texteditor-pwa.png" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </a>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj15-traveler-review.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
+          <h2 class="mt-5">Languages</h2>
+          <div class="container text-center">
+            <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
+              <div class="col my-4">
+                <img src="./assets/logos/uk.svg" width="50" height="50">
+                <p>Fluent</p>
               </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj13-ecommerce-mongodb.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
+              <div class="col my-4">
+                <img src="./assets/logos/france.svg" width="50" height="50">
+                <p>Professional</p>
               </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj12-employment-data.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj11-notetaker.png" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj9-tenthings-toronto.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj6-weather-dashboard.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj4-interactive-quiz.png" class="d-block w-100 ratio ratio-4x3 opacity-50" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="30000">
-                <img src="./assets/images/pj3-password-generator.jpg" class="d-block w-100 ratio ratio-4x3 opacity-75" alt="...">
-                <div class="carousel-caption bg-danger-subtle text-black p-2 rounded border border-dark border-1">
-                  <h5>Text editor</h5>
-                  <p>This is a Progressive Web Application which enables you to<br>- save data to browser's database (IndexedDB)<br>- use it even when you're offline<br>- install it to your computer.</p>
-                </div>
+              <div class="col my-4">
+                <img src="./assets/logos/japan.svg" width="50" height="50">
+                <p>Native</p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselWorks" role="button" data-slide="prev">
-              <div class="bg-danger text-white rounded-4 p-2 border border-white border-5">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span><br>
-                <span class="sr-only fs-6">Prev</span>
-              </div>
-            </a>
-            <a class="carousel-control-next" href="#carouselWorks" role="button" data-slide="next">
-              <div class="bg-danger text-white rounded-4 p-2 border border-white border-5">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span><br>
-                <span class="sr-only fs-6">Next</span>
-              </div>
-            </a>
           </div>
         </div>
       </div>
-
+      
       <!-- Contact -->   
       <div class="flex-column my-5 py-5" id="section-contact">
-        <h1 class="text-dark">Contact</h1>
+        <h1 class="text-dark">Contact 
+          <a href="mailto:shohei.mochizuki.jp@gmail.com" class="ms-3" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/logos/email.svg" height="30px">
+          </a>
+        </h1>
         <div class="m-5 p-5 bg-light rounded-5">
           <div class="container text-center mb-5">
             <div class="row row-cols-2">
@@ -322,6 +369,9 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p class="text-center text-primary-emphasis fs-5">--- ✈️ --- © Shohei Mochizuki 2023 --- ✈️ ---</p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

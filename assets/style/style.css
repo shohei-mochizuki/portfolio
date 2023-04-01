@@ -1,0 +1,54 @@
+:root {
+  --darkblue: rgb(30, 59, 138);
+  --lightblue: rgb(212, 233, 254);
+  --darkred: rgb(106, 1, 1);
+}
+
+.f-darkblue {
+  color: var(--darkblue)
+}
+
+.f-darkred {
+  color: var(--darkred)
+}
+
+.bg-darkblue {
+  background-color: var(--darkblue);
+}
+
+.bg-lightblue {
+  background-color: var(--lightblue);
+}
+
+.border-darkblue {
+  border-color: var(--darkblue);
+  border-style: solid;
+}
+
+.border-black {
+  border-color: black;
+  border-style: solid;
+}
+
+.max-75vh {
+  max-height: 75vh;
+}
+
+.carousel-image {
+  opacity: 1;
+}
+
+.carousel:hover .carousel-image {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.carousel-caption {
+  opacity: 0.2;
+}
+
+.carousel:hover .carousel-caption {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
