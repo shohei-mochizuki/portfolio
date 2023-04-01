@@ -4,6 +4,11 @@
   --darkred: rgb(106, 1, 1);
 }
 
+body {
+  font-family: 'Noto Sans SignWriting', sans-serif;
+  font-family: 'Noto Serif', serif;
+}
+
 .f-darkblue {
   color: var(--darkblue)
 }
