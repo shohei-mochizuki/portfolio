@@ -8,13 +8,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.f-darkblue {
+/* .f-darkblue {
   color: var(--darkblue)
 }
 
 .f-darkred {
   color: var(--darkred)
-}
+} */
 
 .bg-darkblue {
   background-color: var(--darkblue);
