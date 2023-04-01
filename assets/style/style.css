@@ -8,14 +8,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* .f-darkblue {
-  color: var(--darkblue)
-}
-
-.f-darkred {
-  color: var(--darkred)
-} */
-
 .bg-darkblue {
   background-color: var(--darkblue);
 }
@@ -55,4 +47,3 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
-
